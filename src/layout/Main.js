@@ -9,8 +9,8 @@ const Main = () => {
         <div>
             <Navigation></Navigation>
 
-                <h4>It'c Cant be Change</h4>
-                <h4>It'c Cant be Change</h4>
+                <h4>It's Can't be Change</h4>
+                <h4>It's Can't be Change</h4>
                 <hr />
             <Outlet></Outlet>
         </div>

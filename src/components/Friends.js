@@ -1,14 +1,26 @@
 
 
 import React from 'react';
-
+import {
+    createBrowserRouter,
+    RouterProvider,
+    useLoaderData,
+  } from "react-router-dom";
+import Friend from './Friend';
+  
 const Friends = () => {
+    // const albums = useLoaderData();
+    const friends = useLoaderData()
+
     return (
         <div>
-            <h1>Freinds </h1>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, fugiat! Ullam suscipit blanditiis ut itaque possimus tenetur, impedit voluptatum dolorum deleniti id rem quod, molestias officia accusantium eius perspiciatis numquam?
-            </p>
+            <h1>Freinds {friends.length}</h1>
+            {
+                friends.map( friend=> <Friend key={friend.id}
+                    
+                    friend = { friend }
+                ></Friend>)
+            }
         </div>
     );
 };

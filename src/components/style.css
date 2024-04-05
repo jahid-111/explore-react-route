@@ -18,3 +18,10 @@
  .header a:hover {
     color: rgb(152, 32, 32);
  }
+
+ .friend {
+   border: 2px solid rgb(251, 53, 42);
+   margin: 10px;
+   border-radius: 14px;
+   padding: 10px;
+ }

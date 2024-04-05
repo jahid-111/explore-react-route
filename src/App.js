@@ -17,9 +17,14 @@ function App() {
         {path : "home", element: <Home></Home> },
         {path : "about", element: <About></About> },
         {path : "contact", element: <Contact></Contact> },
-        {path: "friends", element: <Friends></Friends>}
+        {path: "friends",
+          loader: async ()=> {
+            return fetch('https://jsonplaceholder.typicode.com/users')
+          },
+          element: <Friends></Friends>}
       ]},
     {path : "/product", element:<Product></Product>},
+    {path : "*", element: <div><h1>Status : 404 !Found</h1></div>},
   ] );
 
 
