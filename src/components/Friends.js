@@ -2,14 +2,11 @@
 
 import React from 'react';
 import {
-    createBrowserRouter,
-    RouterProvider,
     useLoaderData,
   } from "react-router-dom";
 import Friend from './Friend';
   
 const Friends = () => {
-    // const albums = useLoaderData();
     const friends = useLoaderData()
 
     return (
