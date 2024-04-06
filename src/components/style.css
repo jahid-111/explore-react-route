@@ -14,7 +14,6 @@
     border-radius: 10px;
  }
 
-
  .header a:hover {
     color: rgb(152, 32, 32);
  }
@@ -24,4 +23,8 @@
    margin: 10px;
    border-radius: 14px;
    padding: 10px;
+ }
+ .header .linkActive {
+   background: rgb(70, 55, 55);
+   
  }
